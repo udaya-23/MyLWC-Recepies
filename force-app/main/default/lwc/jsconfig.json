@@ -69,6 +69,9 @@
             "c/eventWithData": [
                 "eventWithData/eventWithData.js"
             ],
+            "c/hello": [
+                "hello/hello.js"
+            ],
             "c/helloConditionalRendering": [
                 "helloConditionalRendering/helloConditionalRendering.js"
             ],
@@ -93,8 +96,38 @@
             "c/ldsTabsForDynamicStatic": [
                 "ldsTabsForDynamicStatic/ldsTabsForDynamicStatic.js"
             ],
+            "c/libsMoment": [
+                "libsMoment/libsMoment.js"
+            ],
             "c/lightningDataService": [
                 "lightningDataService/lightningDataService.js"
+            ],
+            "c/miscContentAssets": [
+                "miscContentAssets/miscContentAssets.js"
+            ],
+            "c/miscDOMSelector": [
+                "miscDOMSelector/miscDOMSelector.js"
+            ],
+            "c/miscGetUserId": [
+                "miscGetUserId/miscGetUserId.js"
+            ],
+            "c/miscModal": [
+                "miscModal/miscModal.js"
+            ],
+            "c/miscNotifications": [
+                "miscNotifications/miscNotifications.js"
+            ],
+            "c/miscRestAPICalls": [
+                "miscRestAPICalls/miscRestAPICalls.js"
+            ],
+            "c/miscSharedJavaScript": [
+                "miscSharedJavaScript/miscSharedJavaScript.js"
+            ],
+            "c/miscStaticResources": [
+                "miscStaticResources/miscStaticResources.js"
+            ],
+            "c/mortgage": [
+                "mortgage/mortgage.js"
             ],
             "c/navToChatterHome": [
                 "navToChatterHome/navToChatterHome.js"
@@ -164,39 +197,6 @@
             ],
             "c/wireGetRecordStaticContact": [
                 "wireGetRecordStaticContact/wireGetRecordStaticContact.js"
-            ],
-            "c/miscGetUserId": [
-                "miscGetUserId/miscGetUserId.js"
-            ],
-            "c/miscNotifications": [
-                "miscNotifications/miscNotifications.js"
-            ],
-            "c/miscDOMSelector": [
-                "miscDOMSelector/miscDOMSelector.js"
-            ],
-            "c/miscModel": [
-                "miscModel/miscModel.js"
-            ],
-            "c/miscModal": [
-                "miscModal/miscModal.js"
-            ],
-            "c/miscStaticResources": [
-                "miscStaticResources/miscStaticResources.js"
-            ],
-            "c/miscContentAssets": [
-                "miscContentAssets/miscContentAssets.js"
-            ],
-            "c/mortgage": [
-                "mortgage/mortgage.js"
-            ],
-            "c/miscSharedJavaScript": [
-                "miscSharedJavaScript/miscSharedJavaScript.js"
-            ],
-            "c/miscRestAPICalls": [
-                "miscRestAPICalls/miscRestAPICalls.js"
-            ],
-            "c/libsMoment": [
-                "libsMoment/libsMoment.js"
             ]
         }
     },
