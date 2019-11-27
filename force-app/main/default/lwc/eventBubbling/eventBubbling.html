@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Event Bubbling" icon-name="standard:logging">
+        <template if:true={contacts.data}>
+            <lightning-layout>
+                <lightning-layout-item onselect={handleSelect} padding="around-samll" >
+                    <template for:each={contacts.data} for:item="contact">
+                        <c-contact-list-item-bubbling key={contact.id}
+                                                      contact={contact}>
+                        </c-contact-list-item-bubbling>
+                    </template>
+                </lightning-layout-item>
+                <template if:true={selectedContact}>
+                    <lightning-layout-item padding="horizontal-small">
+                        <lightning-avatar fallback-icon-name="standard:contact" variant="circle"></lightning-avatar>
+                        <p>{selectedContact.Name}</p>
+                        <p><lightning-formatted-phone value={selectedContact.Phone}></lightning-formatted-phone></p>
+                        <p><lightning-formatted-email value={selectedContact.Email}></lightning-formatted-email></p>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </template>
+        <template if:true={contacts.error}>
+            <p>Error received while retreiving data from Salesforece</p>
+        </template>
+
+        <p slot="footer">Child to grandparent communication with custom event that bubbles up
+             and is handled by higher level element in the DOM.</p>
+    </lightning-card>
+</template>

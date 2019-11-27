@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="ContactController" >
+    <aura:attribute name="contacts" type="Contact[]" />
+    <aura:attribute name="contactDetails" type="Contact" />
+    <aura:handler name='init' value='{!this}' action='{!c.doInit}' />
+    <aura:handler name="fireContact" event="c:comContact" action="{!c.handleContact}" />
+
+    <lightning:card title="Child to Parent Event with Data" iconName="standard:logging" footer="Handle child event with data in parent component">
+        <lightning:layout >
+            <lightning:layoutItem>
+                <aura:iteration items="{!v.contacts}" var="contact">
+                        <div class="slds-m-around_medium">
+                            <c:auraContactListItem contact="{! contact}"/>
+                        </div>
+                </aura:iteration>
+
+            </lightning:layoutItem>
+            <lightning:layoutItem>
+                <div class="slds-m-left_medium">
+                    <p>{!v.contactDetails.Name}</p>
+                    <p>{!v.contactDetails.Title}</p>
+                    <p><lightning:formattedPhone value="{!v.contactDetails.Phone}" /></p>
+                    <p><lightning:formattedEmail value="{!v.contactDetails.Email}" /></p>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>	

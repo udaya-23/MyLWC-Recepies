@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="showValue" type="String" default="World" />
+
+    <lightning:card title="Aura Hello Binding" iconName="custom:custom19" footer="Enter text to see it in the output">
+        <p class="slds-p-horizontal_small">
+            Hello, {! v.showValue}
+            <lightning:input type="text" label="Name" value="{!v.showValue}" />
+        </p>
+    </lightning:card>
+
+</aura:component>

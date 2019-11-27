@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Hellow Expressions" icon-name="custom:custom14" >
+        <div class="slds-m-around_medium">
+            <lightning-input label="First Name"
+                             name="firstName"
+                             onchange={handleChange}>
+            
+            </lightning-input>
+            <lightning-input label="Last Name"
+                             name="lastName"
+                             onchange={handleChange}>
+            </lightning-input>
+            <p class="slds-m-top_medium">Uppercase Full Name: {uppercaseFullName}</p>
+        </div>
+        <p slot="footer">Use Javascript Expression in a template. Type value in input field to see the recipe</p>
+    </lightning-card>
+</template>

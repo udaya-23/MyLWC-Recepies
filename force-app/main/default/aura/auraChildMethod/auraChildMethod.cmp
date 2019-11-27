@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <aura:attribute name="dateTime" type="DateTime" />
+    <aura:method name="getDateTime">
+     </aura:method>
+    <lightning:formattedDateTime
+        value="{!v.dateTime}"
+        year="numeric"
+        month="2-digit"
+        day="numeric"
+        hour="numeric"
+        minute="numeric"
+        second="numeric"
+        hour12="false"
+    />
+</aura:component>	

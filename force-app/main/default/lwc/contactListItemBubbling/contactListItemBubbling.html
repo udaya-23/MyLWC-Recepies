@@ -1,0 +1,14 @@
+<template>
+    <a href="#" onclick={handleClick}>
+        <lightning-layout vertical-align="center">
+            <lightning-layout-item > 
+                <lightning-avatar fallback-icon-name="standard:contact"
+                                 size="small"
+                                 variant="circle"></lightning-avatar>
+            </lightning-layout-item>
+            <lightning-layout-item>
+                {contact.Name}
+            </lightning-layout-item>
+        </lightning-layout>
+    </a>    
+</template>

@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <lightning:card title="Call Child Method" iconName="standard:product_consumed" footer="Call child method from parent component">
+        <aura:set attribute="actions">
+            <lightning:button label="Call Child Method" onclick="{!c.handleClick}" />
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+            <c:auraChildMethod aura:id="childMethod"></c:auraChildMethod>
+        </p>
+    </lightning:card>
+</aura:component>	

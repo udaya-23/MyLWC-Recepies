@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Nav to Record" icon-name="custom:custom96">
+        <div class="slds-m-around_medium">
+            <template if:true={contact.data}>
+                <p>{contact.data.Name}</p>
+                <p>{contact.data.Title}</p>
+                <p><lightning-formatted-phone value={contact.data.Phone}></lightning-formatted-phone></p>
+                <p><lightning-formatted-email value={contact.data.Email}></lightning-formatted-email></p>
+            </template>
+        </div>
+        <lightning-button class="slds-m-around_medium"
+                        label="Go to Contact Record"
+                        onclick={navigateToContact}
+        ></lightning-button>
+        <lightning-button class="slds-m-around_medium"
+                            label="Go to Edit Contact"
+                            onclick={navigateToEditContact}
+        ></lightning-button>
+        <p slot="footer">Navigate to a record page. In this example, navigate to a Contact record page.</p>
+    </lightning-card>    
+</template>

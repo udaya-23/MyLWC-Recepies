@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Library - Moment.js" icon-name="custom:custom19">
+        <div class="slds-m-around_medium">
+            <lightning-input type="datetime" value={setDateTime} onchange={handleChange}></lightning-input>
+            <lightning-input label="Day of year" value={dayOfYear} disabled></lightning-input>
+            <lightning-input label="Week of year" value={dayOfWeek} disabled></lightning-input>
+            <lightning-input label="Caliculated" value={caliculated} disabled></lightning-input>
+            <template if:true={error}>
+                <p>{error}</p>
+            </template>
+        </div>
+        <p slot="footer">Use moment.js library in Lightning Web Components.</p>
+    </lightning-card>    
+</template>

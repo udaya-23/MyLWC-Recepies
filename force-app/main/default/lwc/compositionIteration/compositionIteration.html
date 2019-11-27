@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Composition Iteration" icon-name="custom:custom57">
+        <template if:true={contacts}>
+            <template for:each={contacts} for:item="contact">
+                <c-contact-tile key={contact.Id} contact={contact}></c-contact-tile>
+            </template>
+        </template>
+        <template if:false={contacts}>
+            <p>Contacts data not availalbe</p>
+        </template>
+        <p slot="footer">Nest child components in parent component using iterate and
+             pass data from parent component through child public(@api) property </p>
+    </lightning-card>    
+</template>

@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="Record View Form Dynamic" icon-name="standard:contact">
+            <lightning-record-view-form object-api-name={objectApiName}
+                                        record-id={recordId}>
+                <div class="slds-m-around_medium"> 
+                    <lightning-output-field field-name="AccountId"></lightning-output-field>
+                    <lightning-output-field field-name="Name"></lightning-output-field>
+                    <lightning-output-field field-name="Title"></lightning-output-field>
+                    <lightning-output-field field-name="Phone"></lightning-output-field>
+                    <lightning-output-field field-name="Email"></lightning-output-field>
+                </div>                        
+
+            </lightning-record-view-form>
+            <p slot="footer">Create a read-only form for specific record. 
+                This recepie uses dynamic defination (fields are specified as string)</p>
+        </lightning-card>
+    </div>
+</template>

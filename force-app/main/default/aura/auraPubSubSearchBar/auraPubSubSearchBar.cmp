@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="ContactController" >
+    <aura:attribute name="searchString" type="String" />
+    <aura:registerEvent name="appEvent" type="c:appContactsEvent"/>
+
+    <lightning:card title="PubSub Search Bar" iconName="custom:custom30" footer="Provide contact search string to populate contacts on next component">
+        <p class="slds-p-horizontal_small">
+            <lightning:input type="search" label="Search" value="{!v.searchString}" onchange="{!c.handleChange}"  />
+        </p>
+    </lightning:card>
+</aura:component>	

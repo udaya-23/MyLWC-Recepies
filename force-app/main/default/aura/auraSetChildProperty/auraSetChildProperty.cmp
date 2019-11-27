@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <aura:attribute name="setChildProperty" type="String" />
+    <lightning:card title="Set Child Property" iconName="standard:product_consumed" footer="Child property set from partent component">
+        <p class="slds-p-horizontal_small">
+            <lightning:input type="text" label="Enter Value:" value="{!v.setChildProperty}" />
+            <p class="slds-p-around_medium"><c:auraChildProperty childProperty="{!v.setChildProperty}" /></p>
+         </p>
+    </lightning:card>
+</aura:component>	

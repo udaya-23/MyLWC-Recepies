@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="Record-Form Dynamic Contact" icon-name="standard:contact">
+            <div class="slds-m-around_medium">
+                <lightning-record-form record-id={recordId}
+                                       object-api-name={objectApiName}
+                                       fields={fields} >
+
+                </lightning-record-form>
+            </div>
+            <p slot="footer">Create an editable form for a record.
+                 This recipe used a dynamic schema definition (fields are specified as strings)</p>
+        </lightning-card>
+    </div>
+</template>

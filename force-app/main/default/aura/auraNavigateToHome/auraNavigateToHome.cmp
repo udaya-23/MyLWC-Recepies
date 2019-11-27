@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <lightning:card title="Navigate to Home" iconName="custom:custom90"  footer="Navigate to App Home Page">
+        <lightning:navigation aura:id="navService"/>
+        <p class="slds-m-around_medium">
+            <lightning:button label="Go to Home" onclick="{!c.navigateToHome}" />
+        </p>
+        <p class="slds-m-around_medium">
+                <lightning:button label="Go to Hello Tab" onclick="{!c.navigateToHelloTab}" />
+        </p>
+    </lightning:card>
+</aura:component>	

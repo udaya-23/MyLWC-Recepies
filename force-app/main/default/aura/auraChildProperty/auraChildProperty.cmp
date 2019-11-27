@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <aura:attribute name="childProperty" type="String" />
+        <p>{!v.childProperty}</p>           
+</aura:component>	

@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Composition Contact Search" icon-name="custom:custom57">
+        <lightning-input label="Search"
+                         type="search"
+                         onchange={handleKeyChange}>
+        </lightning-input>
+        <template if:true={contacts}>
+            <template for:each={contacts} for:item="contact">
+                <c-contact-tile key={contact.id} contact={contact}></c-contact-tile>
+            </template>
+        </template>
+        <template if:true={error}>
+            <p>Received an error while getting the search results.</p>
+        </template>
+        <p slot="footer">Create an experience component by assembling muliple child components</p>
+    </lightning-card>
+</template>

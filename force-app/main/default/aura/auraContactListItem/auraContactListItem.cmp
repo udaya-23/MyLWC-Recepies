@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <aura:attribute name="contact" type="Contact" />
+    <aura:registerEvent name="fireContact" type="c:comContact" />
+    <a href="#" onclick="{!c.handleClick}">{!v.contact.Name}</a>
+</aura:component>	

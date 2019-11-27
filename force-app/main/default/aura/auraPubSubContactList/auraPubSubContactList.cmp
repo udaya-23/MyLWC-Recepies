@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <aura:attribute name="contacts" type="Contact[]" />
+    <aura:handler event="c:appContactsEvent" action="{!c.handleEvent}"/>
+
+    <lightning:card title="Pub Sub Contact List" iconName="custom:custom30"  footer="Displayes contact record based on search criteria">
+        <p class="slds-p-horizontal_small">
+            <aura:iteration items="{!v.contacts}" var="contact">
+                <div class="slds-m-around_medium">
+                    <a href="#">{!contact.Name}</a>
+                </div>
+            </aura:iteration>
+        </p>
+    </lightning:card>
+</aura:component>	

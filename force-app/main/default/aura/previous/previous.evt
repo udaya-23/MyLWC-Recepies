@@ -1,0 +1,1 @@
+<aura:event type="COMPONENT" description="Fires an event when Paginator Prious button clicked"/>

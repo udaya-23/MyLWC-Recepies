@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes" controller="ContactController" >
+    <aura:attribute name="contacts" type="Contact[]" />
+    
+    <div class="slds-m-around_medium">
+        <lightning:button label="Load Contact" onclick="{! c.doInit }"/>
+    </div>
+
+    <aura:iteration items="{!v.contacts}" var="contact">
+        <p><c:auraContactListItem contact="{! contact}" /></p>    
+     </aura:iteration>
+</aura:component>	

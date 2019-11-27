@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="API Property" icon-name="standard:product_consumed">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Percentage" value={percentage} onchange={hadleChange} ></lightning-input>
+            <c-child-chart percentage={percentage}></c-child-chart>
+        </div>
+        <p slot="footer">Parent-to-child communication.
+            Pass data to a child component using its puclic (@api) property</p>
+    </lightning-card>
+</template>

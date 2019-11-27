@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Apex Wire Method With Complex Params" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-input label="String" type="string" value={stringValue} onchange={handleStringChange}>
+            </lightning-input>
+            <lightning-input label="Number" type="number" value={numberValue} min="0" max="100"
+                onchange={handleNumberChange}></lightning-input>
+            <lightning-input label="List Items" type="number" value={listValue} min="0" max="100" onchange={handleListChange}>
+            </lightning-input>
+        </div>
+        <div class="slds-m-around_medium">
+            <template if:true={apexMessage.data}>
+                {apexMessage.data}
+            </template>
+            <template if:true={apexMessage.error}>
+                <p>Error while getting message from Apex controller.</p>
+            </template>
+        </div>
+        <p slot="footer">Call an Apex method with complex params using @wire.
+            These parameteres can be custom Apex type or sObject type.</p>
+    </lightning-card>
+</template>

@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="LDS Delete Record" icon-name="standard:record">
+        <template if:true={accounts.data}>
+            <div class="slds-m-around_medium">
+                <template for:each={accounts.data} for:item="account">
+                    <lightning-layout key={account.Id}>
+                        <lightning-layout-item flexibility="grow">
+                            {account.Name}
+                        </lightning-layout-item>
+                        <lightning-layout-item>
+                            <lightning-button-icon icon-name="utility:delete"
+                                                   data-recordid={account.Id}
+                                                   title={account.Id}
+                                                   onclick={handleDelete}>
+                            </lightning-button-icon>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </template>
+            </div>
+        </template>
+        <template if:true={accounts.error}>
+            <p>Error received while retriving Accounts</p>
+        </template>
+        <p slot="footer">Delete record without any apex.</p>
+    </lightning-card>
+</template>

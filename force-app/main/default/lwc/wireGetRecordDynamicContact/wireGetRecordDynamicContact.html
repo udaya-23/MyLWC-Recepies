@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="Wire Service - Get Record - Dynamic Contact">
+            <template if:true={contact.data}>
+                <div class="slds-m-around_small">
+                    <p>{name}</p>
+                    <p>{title}</p>
+                    <p><lightning-formatted-phone value={phone}></lightning-formatted-phone></p>
+                    <p><lightning-formatted-email value={email}></lightning-formatted-email></p>
+                </div>
+            </template>
+            <template if:true={contact.error}>
+                <p>Error received while retriving the contact details.</p>
+            </template>
+            <p slot="footer">Create an ad-hoc UI for a specific record.
+                This recepie used dynamic schema definition (fields are specified as strings)</p>
+        </lightning-card>
+    </div>
+</template>

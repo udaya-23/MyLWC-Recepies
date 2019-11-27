@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Apex Imperative Method With Parameters" icon-name="custom:custom63">
+        <lightning-layout vertical-align="end" class="slds-m-around_medium">
+            <lightning-layout-item flexibility="grow">
+                <lightning-input label="Search" 
+                                type="search" 
+                                placeholder="Enter Contact name" 
+                                onchange={handleKeyChange}
+                                value={searchString}>
+                </lightning-input>
+            </lightning-layout-item>
+            <lightning-layout-item class="slds-p-left_xx-small">
+                <lightning-button label="Search" onclick={handleSearch}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+        <div class="slds-m-around_medium">
+            <template if:true={contacts}>
+                <template for:each={contacts} for:item="contact">
+                    <p key={contact.Id}>{contact.Name}</p>
+                </template>
+            </template>
+            <template if:true={error}>
+                <p>Error received while getting contact name(s)</p>
+            </template>
+        </div>
+        <p slot="footer">Call an Apex method imperatively with parameters</p>
+    </lightning-card>
+</template>

@@ -1,0 +1,24 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Launch Chrome Debugger",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}/HelloWorldLightningWebComponent/force-app/main/default/lwc/ldsDeleteRecord"
+    },
+      
+    {
+      "name": "Launch Apex Replay Debugger",
+      "type": "apex-replay",
+      "request": "launch",
+      "logFile": "${command:AskForLogFileName}",
+      "stopOnEntry": true,
+      "trace": true
+    }
+  ]
+}

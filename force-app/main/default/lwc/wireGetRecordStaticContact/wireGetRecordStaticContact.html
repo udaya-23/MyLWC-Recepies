@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="Get-Record Static Contact" icon-name="standard:contact">
+            <div class="slds-m-around_medium">
+                <p>{name}</p>
+                <p>{title}</p>
+                <p><lightning-formatted-phone value={phone}></lightning-formatted-phone></p>
+                <p><lightning-formatted-email value={email}></lightning-formatted-email></p>
+            </div>
+            <p slot="footer">Create an ad-hoc UI for a specific record. 
+                This recipe uses static shema definition (fields are explicitly imported)
+            </p>
+        </lightning-card>
+    </div>    
+</template>

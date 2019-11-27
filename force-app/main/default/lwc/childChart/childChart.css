@@ -1,0 +1,9 @@
+.container {
+    overflow: hidden;
+    color: aqua;
+}
+.bar {
+    height: 4px;
+    width: 36px;
+    background-color: aqua;
+}

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Apex Wire Method to a Function" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template if:true={contacts}>
+                <template for:each={contacts} for:item="contact">
+                    <p key={contact.id}>{contact.Name}</p>
+                </template>
+            </template>
+            <template if:true={error}>
+                <p>Error while retriving Contact data</p>
+            </template>
+        </div>
+        <p slot="footer">Call an Apex method that retrives a list of records using @wire service. 
+            In this recipe, the Apex method is @wire to a component function </p>
+    </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Pub Sub Search Bar" icon-name="custom:custom30">
+        <lightning-input class="slds-m-around_medium" 
+                        label="Search" 
+                        type="search"
+                        placeholder="Search for a Contact"
+                        onchange={handleKeyChange}>
+        </lightning-input>
+        <p slot="footer">Publish an event that any component can subscribe to,
+            even if the publisher and subscriber not in the same DOM branch.
+            <span class="alert">Only use this approach for intercomponent communication in the App Builder.</span>
+            This component publishes the <strong>searchKeyChange</strong> event every time the search key changes.
+            Type a few charectors in the search bar to see this recpie in action.
+        </p>
+    </lightning-card>
+</template>

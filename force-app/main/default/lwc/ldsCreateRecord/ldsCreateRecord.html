@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="LDS Create Record" icon-name="standard:record">
+        <div class="slds-m-around_medium">
+            <lightning-input disabled
+                label="Id"
+                data-id="accountId"
+                value={accountId}>
+            </lightning-input>
+            <lightning-input label="Account Name" 
+                onchange={handleNameChange}
+                class="slds-m-bottom_x-small">
+            </lightning-input>
+            <lightning-button label="Create Account"
+                onclick={createRecord}
+                variant="brand">
+            </lightning-button>
+        </div>
+
+        <p slot="footer">Create a record without creating a server side code.
+            Always consider record-view-form or record-edit-form first.</p>
+    </lightning-card>    
+</template>

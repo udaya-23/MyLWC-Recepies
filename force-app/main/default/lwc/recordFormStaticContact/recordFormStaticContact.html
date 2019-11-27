@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-m-around_medium">
+        <lightning-card title="LDS Record-Form Static Schema" icon-name="standard:contact">
+            <lightning-record-form object-api-name={objectApiName}
+                                    record-id={recordId}
+                                    fields={fields}>
+             </lightning-record-form>
+            <p slot="footer">Create an editable form for a specific record. This recipe uses static schema definition (fields are explicitly imported)</p>
+        </lightning-card>
+    </div>    
+</template>

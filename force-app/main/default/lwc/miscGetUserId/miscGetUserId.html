@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Misc Get User Id" icon-name="custom:custom99">
+        <div class="slds-m-around_medium">
+            <p>User Id: {userId}</p>
+            <template if:true={userDetails.data}>
+                    <p>User Name: {userDetails.data.Name}</p>
+            </template>
+            <template if:true={userDetails.error}>
+                <p>Error received while getting user details.</p>
+            </template>
+
+        </div>
+        <p slot="footer">Get the User Id and show on the card.</p>
+    </lightning-card>
+</template>

@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="isChecked" type="Boolean" default="false" />
+    <lightning:card title="Hello Conditional Rendering" iconName="custom:custom19"
+        footer="Show the values based on condition">
+        <p class="slds-p-horizontal_small">
+            <lightning:input type="checkbox" label="Show the value" onchange="{!c.handleChange}" />
+        </p>
+        <div class="slds-m-around_medium">
+            <aura:if isTrue="{!v.isChecked}">
+                Showing the value
+                <aura:set attribute="else">
+                    I am not showing the hidden value
+                </aura:set>
+            </aura:if>
+        </div>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,212 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/apexImperativeMethod": [
+                "apexImperativeMethod/apexImperativeMethod.js"
+            ],
+            "c/apexImperativeMethodWithComplexParameters": [
+                "apexImperativeMethodWithComplexParameters/apexImperativeMethodWithComplexParameters.js"
+            ],
+            "c/apexImperativeMethodWithParameters": [
+                "apexImperativeMethodWithParameters/apexImperativeMethodWithParameters.js"
+            ],
+            "c/apexStaticSchema": [
+                "apexStaticSchema/apexStaticSchema.js"
+            ],
+            "c/apexWireMethodToFunction": [
+                "apexWireMethodToFunction/apexWireMethodToFunction.js"
+            ],
+            "c/apexWireMethodToProperty": [
+                "apexWireMethodToProperty/apexWireMethodToProperty.js"
+            ],
+            "c/apexWireMethodWithComplexParms": [
+                "apexWireMethodWithComplexParms/apexWireMethodWithComplexParms.js"
+            ],
+            "c/apexWireMethodWithParameters": [
+                "apexWireMethodWithParameters/apexWireMethodWithParameters.js"
+            ],
+            "c/apiFunction": [
+                "apiFunction/apiFunction.js"
+            ],
+            "c/apiSetterGetter": [
+                "apiSetterGetter/apiSetterGetter.js"
+            ],
+            "c/childChart": [
+                "childChart/childChart.js"
+            ],
+            "c/childToParentEvent": [
+                "childToParentEvent/childToParentEvent.js"
+            ],
+            "c/clock": [
+                "clock/clock.js"
+            ],
+            "c/compositionBasics": [
+                "compositionBasics/compositionBasics.js"
+            ],
+            "c/compositionContactSearch": [
+                "compositionContactSearch/compositionContactSearch.js"
+            ],
+            "c/compositionIteration": [
+                "compositionIteration/compositionIteration.js"
+            ],
+            "c/compositionWithAppBuilder": [
+                "compositionWithAppBuilder/compositionWithAppBuilder.js"
+            ],
+            "c/contactListItem": [
+                "contactListItem/contactListItem.js"
+            ],
+            "c/contactListItemBubbling": [
+                "contactListItemBubbling/contactListItemBubbling.js"
+            ],
+            "c/contactTile": [
+                "contactTile/contactTile.js"
+            ],
+            "c/eventBubbling": [
+                "eventBubbling/eventBubbling.js"
+            ],
+            "c/eventWithData": [
+                "eventWithData/eventWithData.js"
+            ],
+            "c/helloConditionalRendering": [
+                "helloConditionalRendering/helloConditionalRendering.js"
+            ],
+            "c/helloExpressions": [
+                "helloExpressions/helloExpressions.js"
+            ],
+            "c/helloForEach": [
+                "helloForEach/helloForEach.js"
+            ],
+            "c/helloIterator": [
+                "helloIterator/helloIterator.js"
+            ],
+            "c/hellowWorld": [
+                "hellowWorld/hellowWorld.js"
+            ],
+            "c/ldsCreateRecord": [
+                "ldsCreateRecord/ldsCreateRecord.js"
+            ],
+            "c/ldsDeleteRecord": [
+                "ldsDeleteRecord/ldsDeleteRecord.js"
+            ],
+            "c/ldsTabsForDynamicStatic": [
+                "ldsTabsForDynamicStatic/ldsTabsForDynamicStatic.js"
+            ],
+            "c/lightningDataService": [
+                "lightningDataService/lightningDataService.js"
+            ],
+            "c/navToChatterHome": [
+                "navToChatterHome/navToChatterHome.js"
+            ],
+            "c/navToFilesHome": [
+                "navToFilesHome/navToFilesHome.js"
+            ],
+            "c/navToHelloTab": [
+                "navToHelloTab/navToHelloTab.js"
+            ],
+            "c/navToHome": [
+                "navToHome/navToHome.js"
+            ],
+            "c/navToListView": [
+                "navToListView/navToListView.js"
+            ],
+            "c/navToNewRecord": [
+                "navToNewRecord/navToNewRecord.js"
+            ],
+            "c/navToRecord": [
+                "navToRecord/navToRecord.js"
+            ],
+            "c/navToRelatedList": [
+                "navToRelatedList/navToRelatedList.js"
+            ],
+            "c/paginator": [
+                "paginator/paginator.js"
+            ],
+            "c/pubSubContactDetails": [
+                "pubSubContactDetails/pubSubContactDetails.js"
+            ],
+            "c/pubSubContactList": [
+                "pubSubContactList/pubSubContactList.js"
+            ],
+            "c/pubSubSearchBar": [
+                "pubSubSearchBar/pubSubSearchBar.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/recordEditFormDynamicContact": [
+                "recordEditFormDynamicContact/recordEditFormDynamicContact.js"
+            ],
+            "c/recordEditFormStaticContact": [
+                "recordEditFormStaticContact/recordEditFormStaticContact.js"
+            ],
+            "c/recordFormDynamicContact": [
+                "recordFormDynamicContact/recordFormDynamicContact.js"
+            ],
+            "c/recordFormStaticContact": [
+                "recordFormStaticContact/recordFormStaticContact.js"
+            ],
+            "c/recordViewFormDynamicContact": [
+                "recordViewFormDynamicContact/recordViewFormDynamicContact.js"
+            ],
+            "c/recordViewFormStaticContact": [
+                "recordViewFormStaticContact/recordViewFormStaticContact.js"
+            ],
+            "c/simpleEvent": [
+                "simpleEvent/simpleEvent.js"
+            ],
+            "c/todoList": [
+                "todoList/todoList.js"
+            ],
+            "c/wireGetRecordDynamicContact": [
+                "wireGetRecordDynamicContact/wireGetRecordDynamicContact.js"
+            ],
+            "c/wireGetRecordStaticContact": [
+                "wireGetRecordStaticContact/wireGetRecordStaticContact.js"
+            ],
+            "c/miscGetUserId": [
+                "miscGetUserId/miscGetUserId.js"
+            ],
+            "c/miscNotifications": [
+                "miscNotifications/miscNotifications.js"
+            ],
+            "c/miscDOMSelector": [
+                "miscDOMSelector/miscDOMSelector.js"
+            ],
+            "c/miscModel": [
+                "miscModel/miscModel.js"
+            ],
+            "c/miscModal": [
+                "miscModal/miscModal.js"
+            ],
+            "c/miscStaticResources": [
+                "miscStaticResources/miscStaticResources.js"
+            ],
+            "c/miscContentAssets": [
+                "miscContentAssets/miscContentAssets.js"
+            ],
+            "c/mortgage": [
+                "mortgage/mortgage.js"
+            ],
+            "c/miscSharedJavaScript": [
+                "miscSharedJavaScript/miscSharedJavaScript.js"
+            ],
+            "c/miscRestAPICalls": [
+                "miscRestAPICalls/miscRestAPICalls.js"
+            ],
+            "c/libsMoment": [
+                "libsMoment/libsMoment.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

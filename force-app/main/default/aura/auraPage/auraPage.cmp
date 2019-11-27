@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <aura:attribute name="pageNumber" type="Integer" default="0"  />
+    <aura:handler name="comPrevious" event="c:previous" action="{!c.handlePrevious}" />
+    <aura:handler name="comNext" event="c:next" action="{!c.handleNext}" />
+
+    <lightning:card title="Child to Parent Communication" iconName="standard:logging" footer="Handle the event fired by the child component">
+         <p class="slds-p-horizontal_small">
+            Page: {!v.pageNumber}
+        </p>
+        <div class="slds-m-around_medium">
+            <c:auraPaginator />
+        </div>
+    </lightning:card>
+</aura:component>	

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Apex Wire Method With Parameters" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-input type="search"
+                             label="Search" 
+                             placeholder="Enter contact name" 
+                             onchange={handleKeyChange}
+                             value={searchString}>
+            </lightning-input>
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <p key={contact.Id}>{contact.Name}</p>
+                </template>
+            </template>
+            <template if:true={contacts.error}>
+                <p>Error received while retriving data from server</p>
+            </template>
+        </div>
+        <p slot="footer">Call an Apex method with parameters using @wire</p>
+    </lightning-card>
+</template>

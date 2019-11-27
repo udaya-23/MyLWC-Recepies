@@ -1,0 +1,28 @@
+<template>
+    <lightning-tabset>
+        <lightning-tab label="Dynamic Schema">
+            <c-record-form-dynamic-contact record-id={recordId}
+                                            object-api-name={objectApiName}>
+            </c-record-form-dynamic-contact>
+            <c-record-view-form-dynamic-contact record-id={recordId}
+                                                object-api-name={objectApiName}>
+            </c-record-view-form-dynamic-contact>
+            <c-record-edit-form-dynamic-contact record-id={recordId}
+                                                object-api-name={objectApiName}>
+            </c-record-edit-form-dynamic-contact>
+            <c-wire-get-record-dynamic-contact record-id={recordId}></c-wire-get-record-dynamic-contact>
+        </lightning-tab>
+        <lightning-tab label="Static Schema">
+            <c-record-form-static-contact record-id={recordId}
+                                          object-api-name={objectApiName}>
+            </c-record-form-static-contact>  
+            <c-record-view-form-static-contact record-id={recordId}
+                                               object-api-name={objectApiName}>
+            </c-record-view-form-static-contact>
+            <c-record-edit-form-static-contact record-id={recordId}
+                                                object-api-name={objectApiName}>
+            </c-record-edit-form-static-contact>
+            <c-wire-get-record-static-contact record-id={recordId}></c-wire-get-record-static-contact>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

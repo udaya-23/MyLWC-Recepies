@@ -1,0 +1,6 @@
+<aura:component implements="force:appHostable, flexipage:availableForAllPageTypes" >
+    <lightning:card title="Hello" iconName="custom:custom14">
+            <p class="slds-m-around_medium">Hello, World!</p>
+         <aura:set attribute="footer">This is the footer.</aura:set>
+    </lightning:card>
+ </aura:component>	

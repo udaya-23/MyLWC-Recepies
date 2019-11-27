@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Misc Notifications" icon-name="custom:custom99">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Title" value={title} onchange={titleChange}></lightning-input>
+            <lightning-input label="Message" value={message} onchange={messageChange}></lightning-input>
+            <lightning-combobox label="Variant" options={options} value={value} onchange={variantChange}>
+            </lightning-combobox>
+            <p class="slds-m-vertical_small">
+                <lightning-button label="Show Notification" onclick={showNotification}></lightning-button>
+            </p>
+        </div>
+        <p slot="footer">Show toast notification based on the variant.</p>
+    </lightning-card>
+</template>

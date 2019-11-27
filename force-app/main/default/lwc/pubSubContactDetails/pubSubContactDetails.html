@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Pub Sub Contact Details" icon-name="custom:custom30">
+        <div class="slds-m-around_medium">
+            <template if:true={contact.data}>
+                <p>{name}</p>
+                <p>{title}</p>
+                <p><lightning-formatted-phone value={phone}></lightning-formatted-phone></p>
+                <p><lightning-formatted-email value={email}></lightning-formatted-email></p>
+            </template>
+            <template if:true={contact.error}>
+                <p>Error received while retriving Contact details.</p>
+            </template>
+        </div>
+        <p slot="footer">Suscribe to an event that another component publishes using pubsub utility.
+            <span class="alert">Only use this approach for intercomponent communication in App Builder.</span>
+            This component subscribe to <strong>contactselected</strong> event. Select a Contact from the list to
+            see this recepie in action.
+        </p>
+    </lightning-card>    
+</template>

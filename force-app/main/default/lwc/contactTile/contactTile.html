@@ -1,0 +1,11 @@
+<template>
+    <template if:true={contact}>
+        <lightning-tile class="slds-p-around_medium">
+            <img src={contact.Photo__c} alt="Contact Photo"/>
+            <p>{contact.Name}</p>
+            <p>{contact.Title}</p>
+            <p>{contact.Phone}</p>
+        </lightning-tile>
+    </template>
+
+</template>

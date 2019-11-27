@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes" >
+    <aura:registerEvent name="comPrevious" type="c:previous"/>
+    <aura:registerEvent name="comNext" type="c:next" />
+    <lightning:layout>
+        <lightning:layoutItem padding="around-small">
+            <lightning:button label="Previous" onclick="{!c.handlePrevious}"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem flexibility="auto"  padding="around-small">
+         </lightning:layoutItem>
+        <lightning:layoutItem padding="around-small" >
+            <lightning:button label="Next" onclick="{!c.handleNext}" />
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>	

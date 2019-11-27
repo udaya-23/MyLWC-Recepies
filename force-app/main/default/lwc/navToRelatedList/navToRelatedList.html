@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Nav to Related List" icon-name="custom:custom96">
+        <div class="slds-m-around_medium">
+            <template if:true={account.data}>
+                <p>Example Account: {account.data.Name}</p>
+                <p>{account.data.Type}</p>
+                <p><lightning-formatted-phone value={account.data.Phone} ></lightning-formatted-phone></p>
+            </template>
+            <template if:true={account.error}>
+                <p>Error while retriving Account record.</p>
+            </template>
+        </div>
+        <lightning-button class="slds-m-around_medium"
+                          label="Go to Related List"
+                          onclick={handleClick}  
+        ></lightning-button>
+        <p slot="footer">Navigate to a Related List. In this example, Navigate to a Contact Related List.</p>
+    </lightning-card>
+</template>

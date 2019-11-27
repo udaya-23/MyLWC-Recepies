@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Event with data" icon-name="standard:logging">
+        <template if:true={contacts.data}>
+            <lightning-layout class="slds-m-around_medium">
+                <lightning-layout-item>
+                    <template for:each={contacts.data} for:item="contact">
+                        <c-contact-list-item key={contact.Id} 
+                                            contact={contact}
+                                            onselect={handleSelect}
+                        ></c-contact-list-item>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item class="slds-m-left_medium">
+                    <template if:true={selectedContact}>
+                        <lightning-avatar size="medium" varient="circle" fallback-icon-name="standard:person_account"></lightning-avatar>
+                        <p>{selectedContact.Name}</p>
+                        <p></p><lightning-formatted-email value={selectedContact.Email}></lightning-formatted-email></p>
+                        <p></p><lightning-formatted-phone value={selectedContact.Phone}></lightning-formatted-phone></p>
+                    </template>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <template if:true={contacts.error}>
+            <p>Error while getting the Contact records</p>
+        </template>
+        <p slot="footer">Child-to-parent communication.
+             Create a custom event and dispatch with contact Id which will be handled by the parent coponent</p>
+    </lightning-card>
+</template>

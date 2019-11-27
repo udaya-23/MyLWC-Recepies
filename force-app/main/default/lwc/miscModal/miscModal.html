@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Misc Modal" icon-name="custom:custom99">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Header" value={header}></lightning-input>
+            <lightning-input label="Content" value={content}></lightning-input>
+            <lightning-button label="Show Modal" onclick={handleClick}></lightning-button>
+        </div>
+        <p slot="footer">Select DOM elements using query selector.</p>
+    </lightning-card>
+</template>

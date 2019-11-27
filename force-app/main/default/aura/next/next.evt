@@ -1,0 +1,1 @@
+<aura:event type="COMPONENT" description="Fires an event when Next button is clicked on paginator"/>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Hellow Greeting" icon-name="custom:custom14" >
+        <div class="slds-m-around_medium">
+                <p>Hello {greetings}</p>
+                <lightning-input label="Name"
+                                 onchange={handleChange}>
+                </lightning-input>
+        </div>
+        <p slot="footer">Change the bounded property value when the input values change.
+             Type in input field to see the recipe in action</p>
+    </lightning-card>
+</template>

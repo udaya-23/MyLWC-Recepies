@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Pub Sub Contact List" icon-name="custom:custom30">
+        <div class="slds-m-around_medium" onselect={handleContactSelect}>
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <c-contact-list-item-bubbling key={contact.Id} contact={contact}></c-contact-list-item-bubbling>
+                </template>
+            </template>
+        </div>
+        <p slot="footer">Subscribe to an event that another component publishes using pubsum utility.
+            <span class="alert">Use this approach only for intercomponent communication in the App Builder.</span>
+            This component subscribe to the seachKeyChange event. Type few charectors in the search bar to see the recepie in action.
+            This component also publishes the <strong>contactSelected</strong> event when you click the contact in the list.
+        </p>
+    </lightning-card>    
+</template>
