@@ -3,7 +3,7 @@ public with sharing class AccountController {
     public static List<Account> getAccountRecords(){
         return [SELECT Id, Name 
                 FROM Account
-                LIMIT 10];
+                LIMIT 10
     }
 
     @AuraEnabled (cacheable = true)
