@@ -6,7 +6,7 @@ public with sharing class AccountController {
                 LIMIT 10];
     }
 
-    @AuraEnabled (cacheable = true)
+    @AuraEnabled (cacheable = true
     public static Account getSingleAccount(){
         return [SELECT Id, Type, Name, Phone
                 FROM Account
