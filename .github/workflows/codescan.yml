@@ -74,7 +74,7 @@ jobs:
 
           login: squ_6c2113149d8d4c446e18d6a80d9c36159ee5673e
 
-          generateSarifFile: true
+          generateSarifFile: false
 
       - name: Run Codescan On PR
 
@@ -94,7 +94,7 @@ jobs:
 
           login: squ_6c2113149d8d4c446e18d6a80d9c36159ee5673e
 
-          generateSarifFile: true
+          generateSarifFile: false
 
           args: |
 
