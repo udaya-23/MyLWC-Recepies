@@ -66,15 +66,15 @@ jobs:
 
           scanChangedFilesOnly: true
 
-          organization: sarif-check
+          organization: alm
 
-          projectKey: github-actions
+          projectKey: githubactions-alm
 
-          codeScanUrl: https://test.codescan.io/
+          codeScanUrl: https://staging.codescan.io/
 
-          login: squ_6c2113149d8d4c446e18d6a80d9c36159ee5673e
+          login: squ_95e5895157cf7cc256b915675ad3c7c85145567d
 
-          generateSarifFile: false
+          generateSarifFile: true
 
       - name: Run Codescan On PR
 
@@ -86,15 +86,15 @@ jobs:
 
           scanChangedFilesOnly: true
 
-          organization: sarif-check
+          organization: alm
 
-          projectKey: github-actions
+          projectKey: githubactions-alm
 
-          codeScanUrl: https://test.codescan.io/
+          codeScanUrl: https://staging.codescan.io/
 
-          login: squ_6c2113149d8d4c446e18d6a80d9c36159ee5673e
+          login: squ_95e5895157cf7cc256b915675ad3c7c85145567d
 
-          generateSarifFile: false
+          generateSarifFile: true
 
           args: |
 
